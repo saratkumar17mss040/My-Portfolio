@@ -34,70 +34,6 @@ ul li a:hover {
 	color: #000000;
 }
 
-@media screen and (max-width: 360px) {
-	ul li {
-		display: block;
-	}
-
-	#skills {
-		flex-direction: column;
-	}
-
-	span {
-		font-size: 0.5em !important;
-	}
-
-	#github-followers,
-	#github-following {
-		font-size: 1em !important;
-	}
-
-	.skill-card > * {
-		font-size: 0.7em;
-		margin-left: -35px;
-	}
-
-	#projects ul > li {
-		width: 250px;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	ul li {
-		display: block;
-	}
-
-	#skills {
-		flex-direction: column;
-		padding: 1em;
-		margin: 1em;
-		align-items: center;
-	}
-
-	span {
-		font-size: 0.5em !important;
-	}
-
-	#github-followers,
-	#github-following {
-		font-size: 1em !important;
-	}
-
-	#skills > * {
-		padding: 5em !important;
-		margin: 1em;
-	}
-
-	.skill-card > * {
-		font-size: 0.7em;
-		margin-left: -35px;
-	}
-
-	#projects ul > li {
-		width: 300px;
-	}
-}
-
 p {
 	font-size: 0.8em;
 }
@@ -138,6 +74,28 @@ span {
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
+}
+
+#resume {
+	font-size: 0.9em;
+	margin: 1em;
+	padding: 0.9em;
+	text-align: center;
+	background-color: #85a7e7;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+#resume a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#resume a:hover {
+	color: #ffffff;
 }
 
 #skills {
@@ -197,27 +155,11 @@ h1 {
 	grid-gap: 1rem;
 }
 
-#projects > ul > li > figure {
-	max-height: 220px;
-	overflow: hidden;
-	border-top-left-radius: 0.5rem;
-	border-top-right-radius: 0.5rem;
-	position: relative;
-}
-
-#projects > ul > li > figure > figcaption > h3 {
-	margin: 1em;
-}
-
-/* #projects > ul > li > figure > figcaption {
-	position: absolute;
-	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.7);
-	width: 100%;
-} */
-
 #projects > ul > li {
-	background-color: rgba(181, 170, 245, 0.774);
+	/* background-color: rgba(181, 170, 245, 0.774);
+	 */
+	background-color: #85a7e7;
+	padding: 1em;
 }
 
 #projects > ul > li > p {
@@ -225,23 +167,25 @@ h1 {
 	padding: 1rem 0.75rem;
 }
 
+/* .project-list {
+	height: 12em;
+} */
+
+.project-list > li {
+	padding: 2em;
+}
+
 .project-list > a {
-	/* padding-left: 0.7em;
-	padding-right: 0.7em; */
 	padding: 0.5rem 1rem;
 	margin: 0.5em;
 	color: #000000;
-	background-color: rgb(250, 147, 110);
+	background-color: #fa9579;
 	font-size: 0.6em;
 	border-radius: 12px;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	-ms-border-radius: 12px;
 	-o-border-radius: 12px;
-}
-
-#projects > ul > li > figure > img {
-	width: 100%;
 }
 
 #blogs h3 {
@@ -282,4 +226,131 @@ h1 {
 
 .single-blog > * {
 	margin: 1em;
+}
+
+footer {
+	background-color: #65d6ce;
+	padding: 1.5rem;
+	color: #000000;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.fa {
+	padding: 8px;
+	width: 45px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	color: #ffffff;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background-color: #3b5998;
+}
+
+.fa-twitter {
+	background-color: #55acee;
+}
+
+.fa-github {
+	background-color: #000000;
+}
+
+.fa-reddit {
+	color: white;
+}
+
+.fa-linkedin {
+	background-color: #007bb5;
+}
+
+.fa-instagram {
+	background-color: #ea4c89;
+}
+
+.fa-reddit {
+	background-color: orange;
+}
+
+@media screen and (max-width: 500px) {
+	ul li {
+		display: block;
+	}
+
+	#skills {
+		flex-direction: column;
+		padding: 1em;
+		margin: 1em;
+		align-items: center;
+	}
+
+	span {
+		font-size: 0.5em !important;
+	}
+
+	#github-followers,
+	#github-following {
+		font-size: 1em !important;
+	}
+
+	#skills > * {
+		padding: 5em !important;
+		margin: 1em;
+	}
+
+	.skill-card > * {
+		font-size: 0.7em;
+		margin-left: -35px;
+	}
+
+	#projects ul > li {
+		width: 300px !important;
+	}
+
+	.project-list > a {
+		display: block;
+		padding: 0.25rem 0.35rem;
+		margin: 0.2em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	ul li {
+		display: block;
+	}
+
+	#skills {
+		flex-direction: column;
+	}
+
+	span {
+		font-size: 0.5em !important;
+	}
+
+	#github-followers,
+	#github-following {
+		font-size: 1em !important;
+	}
+
+	.skill-card > * {
+		font-size: 0.7em;
+		margin-left: -35px;
+	}
+
+	#projects ul > li {
+		/* width: 250px; */
+		height: auto;
+	}
+
+	.project-list > a {
+		display: block;
+		padding: 0.25rem 0.35rem;
+		margin: 0.2em;
+	}
 }
