@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif;
+}
+
+:root {
+	font-size: 24px;
+}
+
+nav {
+	background-color: #65d6ce;
+	padding: 1.2em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 1.2em;
+	padding: 0.6em 0.6em 0.6em 0.6em;
+	font-weight: bold;
+}
+
+ul li {
+	display: inline;
+}
+
+ul li a:hover {
+	color: #000000;
+}
+
+@media screen and (max-width: 360px) {
+	ul li {
+		display: block;
+	}
+
+	#skills {
+		flex-direction: column;
+	}
+
+	span {
+		font-size: 0.5em !important;
+	}
+
+	#github-followers,
+	#github-following {
+		font-size: 1em !important;
+	}
+
+	.skill-card > * {
+		font-size: 0.7em;
+		margin-left: -35px;
+	}
+
+	#projects ul > li {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	ul li {
+		display: block;
+	}
+
+	#skills {
+		flex-direction: column;
+		padding: 1em;
+		margin: 1em;
+		align-items: center;
+	}
+
+	span {
+		font-size: 0.5em !important;
+	}
+
+	#github-followers,
+	#github-following {
+		font-size: 1em !important;
+	}
+
+	#skills > * {
+		padding: 5em !important;
+		margin: 1em;
+	}
+
+	.skill-card > * {
+		font-size: 0.7em;
+		margin-left: -35px;
+	}
+
+	#projects ul > li {
+		width: 300px;
+	}
+}
+
+p {
+	font-size: 0.8em;
+}
+
+#welcome {
+	font-size: 1em;
+	font-weight: bolder;
+}
+
+span {
+	font-size: 0.8em;
+}
+
+#img-profile {
+	height: auto;
+	max-width: 25%;
+}
+
+#about {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffe9d6;
+	padding-bottom: 1em;
+}
+
+#about > * {
+	padding: 0.5em;
+}
+
+.github-info {
+	border: none;
+	padding: 0.4em;
+	background-color: #fa9579;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+#skills {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#skills > * {
+	width: 32%;
+	padding-bottom: 10%;
+	background-color: #85a7e7;
+	padding: 2em;
+	margin: 1em;
+}
+
+.skill-card {
+	text-align: center;
+	border-radius: 15px;
+	font-weight: bolder;
+	color: rgb(0, 0, 0);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+
+.skill-card > :first-child {
+	text-transform: uppercase;
+}
+.skill-card:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 1em;
+}
+
+#projects {
+	padding: 2em;
+}
+
+#projects > ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+	grid-gap: 1rem;
+}
+
+#projects > ul > li > figure {
+	max-height: 220px;
+	overflow: hidden;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	position: relative;
+}
+
+#projects > ul > li > figure > figcaption > h3 {
+	margin: 1em;
+}
+
+/* #projects > ul > li > figure > figcaption {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+} */
+
+#projects > ul > li {
+	background-color: rgba(181, 170, 245, 0.774);
+}
+
+#projects > ul > li > p {
+	line-height: 1.5;
+	padding: 1rem 0.75rem;
+}
+
+.project-list > a {
+	/* padding-left: 0.7em;
+	padding-right: 0.7em; */
+	padding: 0.5rem 1rem;
+	margin: 0.5em;
+	color: #000000;
+	background-color: rgb(250, 147, 110);
+	font-size: 0.6em;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+}
+
+#projects > ul > li > figure > img {
+	width: 100%;
+}
+
+#blogs h3 {
+	margin-bottom: 1em;
+}
+
+#blogs {
+	margin: 2em;
+}
+
+#blogs > * {
+	line-height: 1.4em;
+}
+
+.blog {
+	margin-bottom: 3em;
+	padding: 2em;
+	background-color: rgb(247, 169, 208);
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
+}
+
+.blog > h3 > a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.blog > h3 > a:hover {
+	color: #2f1af0;
+}
+
+.single-blog {
+	padding: 2em;
+}
+
+.single-blog > * {
+	margin: 1em;
+}
