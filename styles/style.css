@@ -296,6 +296,26 @@ footer {
 	background-color: orange;
 }
 
+.blog > a {
+	display: inline-block;
+	text-decoration: none;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-top: 1rem;
+	/* border: none; */
+	background-color: #65d6ce;
+	color: #000000;
+	border-radius: 2em;
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	-ms-border-radius: 2em;
+	-o-border-radius: 2em;
+	font-weight: bolder;
+	font-size: 0.8em;
+}
+
 /* Media rule for 500px screen sizes */
 
 @media screen and (max-width: 500px) {
