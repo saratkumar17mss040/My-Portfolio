@@ -234,11 +234,11 @@ h1 {
 
 .single-blog {
 	margin: 0.5rem;
-	background-color: #F3F4F6;
+	background-color: #f3f4f6;
 }
 
 .single-blog > p {
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 }
 
 #blogs h3 {
@@ -437,6 +437,10 @@ footer ul li {
 		text-align: center;
 	}
 
+	.single-blog > p {
+		font-size: 0.6rem;
+	}
+
 	/* footer {
 		background-color: #65d6ce;
 		padding-top: 1.5rem;
@@ -487,6 +491,10 @@ footer ul li {
 	#projects ul > li {
 		/* width: 250px; */
 	/* height: auto; */
+
+	.single-blog > p {
+		font-size: 0.6rem;
+	}
 
 	#projects ul li {
 		margin: 1rem 0rem;
