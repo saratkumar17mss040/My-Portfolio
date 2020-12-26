@@ -75,7 +75,7 @@ span {
 	flex-direction: column;
 	align-items: center;
 	background-color: #eee;
-	margin: 3rem 4rem;
+	/* margin: 3rem 4rem; */
 	border-radius: 1rem;
 	padding-bottom: 1em;
 	-webkit-border-radius: 1rem;
@@ -100,10 +100,10 @@ span {
 }
 
 #resume {
-	font-size: 0.9em;
+	font-size: 0.7em;
 	margin: 1em;
 	margin-top: 2rem;
-	padding: 0.9em;
+	padding: 2em;
 	text-align: center;
 	background-color: #7404fd;
 	color: white !important;
@@ -481,6 +481,17 @@ footer ul li {
 		font-size: 0.6rem;
 	}
 
+	#about {
+		padding: 2rem;
+	}
+
+	#resume {
+		padding: 0.4rem;
+		/* padding-left: 0.4rem;
+		padding-right: 0.4em; */
+		/* margin: 0.5rem; */
+	}
+
 	/* footer {
 		background-color: #7404FD;
 		padding-top: 1.5rem;
@@ -518,6 +529,10 @@ footer ul li {
 		/* background-color: #85a7e7; */
 		padding: 2rem 1rem;
 		background-color: #f6f5f7;
+	}
+
+	.github-info {
+		padding: 0.4em;
 	}
 	/* padding: 2em;  */
 	/* margin: 0.5em;
@@ -557,6 +572,21 @@ footer ul li {
 		margin: 0.5em;
 		margin-bottom: 1em;
 		margin-left: 0rem;
+	}
+
+	#about {
+		padding: 2rem;
+	}
+
+	#resume {
+		/* padding-left: 0.4rem;
+		padding-right: 0.4em; */
+		padding: 0.4rem;
+		/* margin: 0.5rem; */
+	}
+
+	.github-info {
+		padding: 0.4em;
 	}
 
 	/* footer  {
