@@ -45,8 +45,8 @@ ul li {
 	display: inline;
 }
 
-ul li a:hover {
-	color: #000000;
+ul li a {
+	cursor: pointer;
 }
 
 p {
@@ -74,8 +74,14 @@ span {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	background-color: #ffe9d6;
+	background-color: #eee;
+	margin: 3rem 4rem;
+	border-radius: 1rem;
 	padding-bottom: 1em;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
 }
 
 #about > * {
@@ -83,37 +89,39 @@ span {
 }
 
 .github-info {
-	border: none;
-	padding: 0.4em;
-	background-color: #fa9579;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
+	border: 1px solid #7404fd;
+	padding: 0.8em;
+	background: none;
+	border-radius: 2rem;
+	-webkit-border-radius: 2rem;
+	-moz-border-radius: 2rem;
+	-ms-border-radius: 2rem;
+	-o-border-radius: 2rem;
 }
 
 #resume {
 	font-size: 0.9em;
 	margin: 1em;
+	margin-top: 2rem;
 	padding: 0.9em;
 	text-align: center;
-	background-color: #85a7e7;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
+	background-color: #7404fd;
+	color: white !important;
+	border-radius: 2rem;
+	-webkit-border-radius: 2rem;
+	-moz-border-radius: 2rem;
+	-ms-border-radius: 2rem;
+	-o-border-radius: 2rem;
 }
 
 #resume a {
 	text-decoration: none;
-	color: #000000;
-}
-
-#resume a:hover {
 	color: #ffffff;
 }
+
+/* #resume a:hover {
+	color: #ffffff;
+} */
 
 /* Skills styles */
 
@@ -142,6 +150,7 @@ span {
 	-moz-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
+	box-shadow: 9.91px 9.91px 15px #e0dfe1, -9.91px -9.91px 15px #ffffff;
 }
 
 .skill-card > :first-child {
@@ -259,6 +268,7 @@ h1 {
 	margin-bottom: 3em;
 	padding: 2em;
 	background-color: #f6f5f7;
+	box-shadow: 9.91px 9.91px 15px #e0dfe1, -9.91px -9.91px 15px #ffffff;
 	border-radius: 12px;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
@@ -324,9 +334,9 @@ footer ul li {
 	-o-border-radius: 50%;
 }
 
-.fa:hover {
+/* .fa:hover {
 	opacity: 0.7;
-}
+} */
 
 .fa-facebook {
 	background-color: #3b5998;
