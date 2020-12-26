@@ -22,7 +22,7 @@ body > div {
 /* Nav styles */
 
 nav {
-	background-color: #65d6ce;
+	background-color: #7404fd;
 	padding: 1.2em;
 	border-bottom-left-radius: 1rem;
 	border-bottom-right-radius: 1rem;
@@ -128,7 +128,7 @@ span {
 	width: 42%;
 	padding-bottom: 10%;
 	/* background-color: #85a7e7; */
-	background-color: rgb(247, 169, 208);
+	background-color: #f6f5f7;
 	padding: 2em;
 	margin: 0.5em;
 }
@@ -180,6 +180,7 @@ h1 {
 	/* display: grid; */
 	display: flex;
 	flex-direction: column;
+	padding: 0rem 1rem;
 	/* grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
 	grid-gap: 1rem; */
 }
@@ -189,8 +190,9 @@ h1 {
 	*/ /*background-color: #85a7e7;
 	*/
 	border-radius: 1rem;
-	background-color: rgb(247, 169, 208);
+	background-color: #f6f5f7;
 	padding: 2em;
+	box-shadow: 9.91px 9.91px 15px #e0dfe1, -9.91px -9.91px 15px #ffffff;
 	/*margin: auto;
 	*/ /*margin-top: 1rem;
 	margin-bottom: 1rem;
@@ -205,7 +207,7 @@ h1 {
 
 #projects > ul > li > p {
 	line-height: 1.5;
-	padding: 1rem 0.75rem;
+	padding: 1rem 0rem;
 }
 
 /* .project-list {
@@ -221,7 +223,7 @@ h1 {
 	margin: 0.5em;
 	color: #000000;
 	/* background-color: #fa9579; */
-	background-color: #65d6ce;
+	background-color: #7404fd;
 	font-size: 0.6em;
 	border-radius: 12px;
 	-webkit-border-radius: 12px;
@@ -256,7 +258,7 @@ h1 {
 .blog {
 	margin-bottom: 3em;
 	padding: 2em;
-	background-color: rgb(247, 169, 208);
+	background-color: #f6f5f7;
 	border-radius: 12px;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
@@ -284,7 +286,7 @@ h1 {
 /* Footer stlyes */
 
 footer {
-	background-color: #65d6ce;
+	background-color: #7404fd;
 	padding-top: 1.5rem;
 	padding-bottom: 1rem;
 	color: #000000;
@@ -366,7 +368,7 @@ footer ul li {
 	margin-top: 1rem;
 	padding: 0.3rem 0rem;
 	/* border: none; */
-	background-color: #65d6ce;
+	background-color: #7404fd;
 	color: #000000;
 	border-radius: 2em;
 	-webkit-border-radius: 2em;
@@ -375,6 +377,28 @@ footer ul li {
 	-o-border-radius: 2em;
 	font-weight: bolder;
 	font-size: 0.8em;
+}
+
+/* Latest colors */
+
+.secondary-btn {
+	background: none !important;
+	border-radius: 2rem !important;
+	border: 1px solid #7404fd !important;
+	-webkit-border-radius: 2rem !important;
+	-moz-border-radius: 2rem !important;
+	-ms-border-radius: 2rem !important;
+	-o-border-radius: 2rem !important;
+}
+
+.primary-btn {
+	background-color: #7404fd !important;
+	border-radius: 2rem !important;
+	-webkit-border-radius: 2rem !important;
+	-moz-border-radius: 2rem !important;
+	-ms-border-radius: 2rem !important;
+	-o-border-radius: 2rem !important;
+	color: white !important;
 }
 
 /* Media rule for 500px screen sizes */
@@ -392,8 +416,12 @@ footer ul li {
 		/* margin: auto; */
 	}
 
+	body > div {
+		padding: 0;
+	}
+
 	#skills > * {
-		/* width: 42%; */
+		width: 80%;
 		padding-bottom: 10%;
 		/* background-color: #85a7e7; */
 		background-color: #fa9579;
@@ -415,21 +443,23 @@ footer ul li {
 		/* padding: 4em !important; */
 		/* padding: 4rem; */
 		padding: 2rem 1rem;
-		background-color: rgb(247, 169, 208);
+		background-color: #f6f5f7;
 		/* margin: 1em; */
 	}
 
 	#projects ul li {
 		margin: 1rem 0rem;
-		background-color: rgb(247, 169, 208);
+		background-color: #f6f5f7;
 		border-radius: 1rem;
+		/* box-shadow: 9.91px 9.91px 15px #e0dfe1, -9.91px -9.91px 15px #ffffff; */
 	}
 
 	.project-list > a {
 		display: block;
-		padding: 0.25rem 0.35rem;
+		/* padding: 0.25rem 0.35rem; */
 		margin: 0.5em;
 		margin-bottom: 1em;
+		margin-left: 0rem;
 	}
 
 	.skill-card > * {
@@ -442,7 +472,7 @@ footer ul li {
 	}
 
 	/* footer {
-		background-color: #65d6ce;
+		background-color: #7404FD;
 		padding-top: 1.5rem;
 		padding-bottom: 1rem;
 		color: #000000;
@@ -468,12 +498,16 @@ footer ul li {
 		flex-direction: column;
 	}
 
+	body > div {
+		padding: 0;
+	}
+
 	#skills > * {
-		/* width: 42%; */
+		width: 80%;
 		/* padding-bottom: 10%; */
 		/* background-color: #85a7e7; */
 		padding: 2rem 1rem;
-		background-color: rgb(247, 169, 208);
+		background-color: #f6f5f7;
 	}
 	/* padding: 2em;  */
 	/* margin: 0.5em;
@@ -498,7 +532,7 @@ footer ul li {
 
 	#projects ul li {
 		margin: 1rem 0rem;
-		background-color: rgb(247, 169, 208);
+		background-color: #f6f5f7;
 		border-radius: 1rem;
 	}
 
@@ -509,9 +543,10 @@ footer ul li {
 
 	.project-list > a {
 		display: block;
-		padding: 0.25rem 0.35rem;
+		/* padding: 0.25rem 0.35rem; */
 		margin: 0.5em;
 		margin-bottom: 1em;
+		margin-left: 0rem;
 	}
 
 	/* footer  {
@@ -519,7 +554,7 @@ footer ul li {
 	} */
 
 	/* footer {
-		background-color: #65d6ce;
+		background-color: #7404FD;
 		padding-top: 1.5rem;
 		padding-bottom: 1rem;
 		color: #000000;
