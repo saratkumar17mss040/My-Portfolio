@@ -1,3 +1,5 @@
+/* Removing and setting global styles */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,16 +7,23 @@
 	font-family: Poppins, sans-serif;
 }
 
+/* Setting root font-size and colors */
+
 :root {
 	font-size: 24px;
+	--primary-color: #7404fd;
+	--secondary-color: #f6f5f7;
+	--white-color: #ffffff;
 }
 
 body > div {
 	padding: 1em;
 }
 
+/* Navbar styles */
+
 nav {
-	background-color: #7404fd;
+	background-color: var(--primary-color);
 	padding: 1.2em;
 	border-bottom-left-radius: 1rem;
 	border-bottom-right-radius: 1rem;
@@ -26,7 +35,7 @@ ul {
 
 ul li a {
 	text-decoration: none;
-	color: #ffffff;
+	color: var(--white-color);
 	font-size: 1.2em;
 	padding: 0.6em 0.6em 0.6em 0.6em;
 	font-weight: bold;
@@ -58,13 +67,14 @@ span {
 	max-width: 65%;
 }
 
+/* About section styles */
+
 #about {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	background-color: #eee;
-
 	border-radius: 1rem;
 	padding-bottom: 1em;
 	-webkit-border-radius: 1rem;
@@ -78,7 +88,7 @@ span {
 }
 
 .github-info {
-	border: 1px solid #7404fd;
+	border: 1px solid var(--primary-color);
 	padding: 0.8em;
 	background: none;
 	border-radius: 2rem;
@@ -94,8 +104,8 @@ span {
 	margin-top: 2rem;
 	padding: 2em;
 	text-align: center;
-	background-color: #7404fd;
-	color: white !important;
+	background-color: var(--primary-color);
+	color: var(--white-color) !important;
 	border-radius: 2rem;
 	-webkit-border-radius: 2rem;
 	-moz-border-radius: 2rem;
@@ -105,12 +115,13 @@ span {
 
 #resume a {
 	text-decoration: none;
-	color: #ffffff;
+	color: var(--white-color);
 }
+
+/* Skills section styles */
 
 #skills {
 	display: flex;
-
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
@@ -118,22 +129,22 @@ span {
 #skills > * {
 	width: 42%;
 	padding-bottom: 10%;
-
-	background-color: #f6f5f7;
+	background-color: var(--secondary-color);
 	padding: 2em;
 	margin: 0.5em;
 }
 
 .skill-card {
 	text-align: center;
-	border-radius: 15px;
+	border-radius: 0.7rem;
 	font-weight: bolder;
 	color: rgb(0, 0, 0);
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	-ms-border-radius: 15px;
-	-o-border-radius: 15px;
-	box-shadow: 9.91px 9.91px 15px #e0dfe1, -9.91px -9.91px 15px #ffffff;
+	-webkit-border-radius: 0.7rem;
+	-moz-border-radius: 0.7rem;
+	-ms-border-radius: 0.7rem;
+	-o-border-radius: 0.7rem;
+	box-shadow: 9.91px 9.91px 15px #e0dfe1,
+		-9.91px -9.91px 15px var(--white-color);
 }
 
 .skill-card > :first-child {
@@ -158,6 +169,8 @@ h1 {
 	margin-top: 1em;
 }
 
+/* Project section and project list styles */
+
 #projects > ul {
 	display: flex;
 	flex-direction: column;
@@ -166,15 +179,15 @@ h1 {
 
 #projects > ul > li {
 	border-radius: 1rem;
-	background-color: #f6f5f7;
+	background-color: var(--secondary-color);
 	padding: 2em;
-	box-shadow: 9.91px 9.91px 15px #e0dfe1, -9.91px -9.91px 15px #ffffff;
-
+	box-shadow: 9.91px 9.91px 15px #e0dfe1,
+		-9.91px -9.91px 15px var(--white-color);
 	margin: 1rem 5rem;
-	-webkit-border-radius: 1r;
-	-moz-border-radius: 1r;
-	-ms-border-radius: 1r;
-	-o-border-radius: 1r;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
 }
 
 #projects > ul > li > p {
@@ -190,8 +203,7 @@ h1 {
 	padding: 0.7rem 1rem;
 	margin: 0.5em;
 	color: #000000;
-
-	background-color: #7404fd;
+	background-color: var(--primary-color);
 	font-size: 0.6em;
 	border-radius: 12px;
 	-webkit-border-radius: 12px;
@@ -199,6 +211,8 @@ h1 {
 	-ms-border-radius: 12px;
 	-o-border-radius: 12px;
 }
+
+/* Blog section styles */
 
 .single-blog {
 	margin: 0.5rem;
@@ -224,8 +238,9 @@ h1 {
 .blog {
 	margin-bottom: 3em;
 	padding: 2em;
-	background-color: #f6f5f7;
-	box-shadow: 9.91px 9.91px 15px #e0dfe1, -9.91px -9.91px 15px #ffffff;
+	background-color: var(--secondary-color);
+	box-shadow: 9.91px 9.91px 15px #e0dfe1,
+		-9.91px -9.91px 15px var(--white-color);
 	border-radius: 12px;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
@@ -250,8 +265,10 @@ h1 {
 	margin: 1em;
 }
 
+/* Footer section styles */
+
 footer {
-	background-color: #7404fd;
+	background-color: var(--primary-color);
 	padding-top: 1.5rem;
 	padding-bottom: 1rem;
 	color: #000000;
@@ -271,6 +288,8 @@ footer ul li {
 	display: inline;
 }
 
+/* Social media icon styles */
+
 .fa {
 	padding: 8px;
 	width: 45px;
@@ -278,7 +297,7 @@ footer ul li {
 	text-decoration: none;
 	margin: 5px 2px;
 	border-radius: 50%;
-	color: #ffffff;
+	color: var(--white-color);
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
@@ -318,11 +337,9 @@ footer ul li {
 	text-align: center;
 	max-width: 6rem;
 	text-decoration: none;
-
 	margin-top: 1rem;
 	padding: 0.3rem 0rem;
-
-	background-color: #7404fd;
+	background-color: var(--primary-color);
 	color: #000000;
 	border-radius: 2em;
 	-webkit-border-radius: 2em;
@@ -336,7 +353,7 @@ footer ul li {
 .secondary-btn {
 	background: none !important;
 	border-radius: 2rem !important;
-	border: 1px solid #7404fd !important;
+	border: 1px solid var(--primary-color) !important;
 	-webkit-border-radius: 2rem !important;
 	-moz-border-radius: 2rem !important;
 	-ms-border-radius: 2rem !important;
@@ -344,7 +361,7 @@ footer ul li {
 }
 
 .primary-btn {
-	background-color: #7404fd !important;
+	background-color: var(--primary-color) !important;
 	border-radius: 2rem !important;
 	-webkit-border-radius: 2rem !important;
 	-moz-border-radius: 2rem !important;
@@ -352,6 +369,8 @@ footer ul li {
 	-o-border-radius: 2rem !important;
 	color: white !important;
 }
+
+/* Media rule for 500px screen sizes */
 
 @media screen and (max-width: 500px) {
 	ul li {
@@ -361,7 +380,6 @@ footer ul li {
 	#skills {
 		flex-direction: column;
 		padding: 1em;
-
 		align-items: center;
 	}
 
@@ -372,9 +390,8 @@ footer ul li {
 	#skills > * {
 		width: 80%;
 		padding-bottom: 10%;
-
-		background-color: #fa9579;
-		padding: 2em;
+		background-color: var(--secondary-color);
+		padding: 2em 1rem;
 	}
 
 	span {
@@ -386,20 +403,14 @@ footer ul li {
 		font-size: 1em !important;
 	}
 
-	#skills > * {
-		padding: 2rem 1rem;
-		background-color: #f6f5f7;
-	}
-
 	#projects ul li {
 		margin: 1rem 0rem;
-		background-color: #f6f5f7;
+		background-color: var(--secondary-color);
 		border-radius: 1rem;
 	}
 
 	.project-list > a {
 		display: block;
-
 		margin: 0.5em;
 		margin-bottom: 1em;
 		margin-left: 0rem;
@@ -411,7 +422,7 @@ footer ul li {
 	}
 
 	.single-blog > p {
-		font-size: 0.6rem;
+		font-size: 0.7rem;
 	}
 
 	#about {
@@ -422,6 +433,8 @@ footer ul li {
 		padding: 0.4rem;
 	}
 }
+
+/* Media rule for 360px screen sizes */
 
 @media screen and (max-width: 360px) {
 	ul li {
@@ -438,22 +451,17 @@ footer ul li {
 
 	#skills > * {
 		width: 80%;
-
 		padding: 2rem 1rem;
-		background-color: #f6f5f7;
-	}
-
-	.github-info {
-		padding: 0.4em;
+		background-color: var(--secondary-color);
 	}
 
 	.single-blog > p {
-		font-size: 0.6rem;
+		font-size: 0.7rem;
 	}
 
 	#projects ul li {
 		margin: 1rem 0rem;
-		background-color: #f6f5f7;
+		background-color: var(--secondary-color);
 		border-radius: 1rem;
 	}
 
@@ -464,7 +472,6 @@ footer ul li {
 
 	.project-list > a {
 		display: block;
-
 		margin: 0.5em;
 		margin-bottom: 1em;
 		margin-left: 0rem;
@@ -479,6 +486,6 @@ footer ul li {
 	}
 
 	.github-info {
-		padding: 0.4em;
+		padding: 0.2em;
 	}
 }
