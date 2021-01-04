@@ -147,7 +147,7 @@ span {
 		-9.91px -9.91px 15px var(--white-color);
 }
 
-.skill-card > :first-child {
+.tech {
 	text-transform: uppercase;
 }
 
